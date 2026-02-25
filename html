@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOP SELLER - Premium Digital Products</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; }
+        .header { text-align: center; margin-bottom: 40px; padding: 20px; background: #ffffff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-bottom: 4px solid #1877f2; }
+        .header h1 { color: #1c1e21; margin: 0; font-size: 2.5em; text-transform: uppercase; letter-spacing: 2px;}
+        .header p { color: #606770; font-size: 1.1em; margin-top: 5px; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: #fff; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-top: 5px solid #1877f2; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+        
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+        }
+        .product-title { font-size: 1.2em; font-weight: bold; color: #1c1e21; margin-bottom: 10px; line-height: 1.4; text-align: center; }
+        .product-price { font-size: 1.5em; color: #e41e3f; font-weight: bold; margin-bottom: 15px; text-align: center; }
+        .stock-in { color: #28a745; font-weight: bold; font-size: 0.9em; margin-bottom: 15px; display: inline-block; background: #e6ffe6; padding: 5px 10px; border-radius: 5px; align-self: center; }
+        .stock-limited { color: #ff9800; font-weight: bold; font-size: 0.9em; margin-bottom: 15px; display: inline-block; background: #fff3e0; padding: 5px 10px; border-radius: 5px; align-self: center; }
+        .features { list-style: none; padding: 0; margin: 0 0 25px 0; color: #4b4f56; line-height: 1.6; flex-grow: 1; }
+        .features li { padding-left: 25px; position: relative; margin-bottom: 8px; font-size: 0.95em; }
+        .features li::before { content: "✅"; position: absolute; left: 0; top: 0; font-size: 0.9em; }
+        .whatsapp-btn { display: block; text-align: center; background: #25D366; color: white; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.1em; transition: 0.3s; margin-top: 10px; }
+        .whatsapp-btn:hover { background: #128C7E; }
+
+        /* ستايلات جديدة ديال الأقسام اللي زدنا */
+        .section-wrapper { text-align: center; margin: 60px 0 30px 0; }
+        .section-title { font-size: 2em; color: #1c1e21; display: inline-block; padding-bottom: 10px; border-bottom: 4px solid #1877f2; text-transform: uppercase; font-weight: bold; }
+        
+        .reviews-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .review-card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); width: 300px; border-left: 5px solid #f5c518; }
+        .stars { color: #f5c518; font-size: 1.2em; margin-bottom: 10px; }
+        .reviewer-name { font-weight: bold; color: #1c1e21; margin-bottom: 5px; }
+        .review-text { color: #606770; font-size: 0.9em; line-height: 1.5; font-style: italic; }
+        
+        .faq-container { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-left: 4px solid #1877f2; }
+        .faq-question { font-weight: bold; font-size: 1.1em; color: #1c1e21; margin-bottom: 8px; }
+        .faq-answer { color: #4b4f56; font-size: 0.95em; line-height: 1.5; }
+        
+        .footer { background: #1c1e21; color: white; text-align: center; padding: 40px 20px; margin-top: 60px; border-radius: 10px; }
+        .footer p { margin: 10px 0; color: #b0b3b8; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            TOOP SELLER 
+            <span style="font-size: 0.4em; background: #1877f2; color: white; padding: 5px 12px; border-radius: 20px; font-weight: bold; letter-spacing: 1px;">⭐ 100% TRUSTED</span>
+        </h1>
+        <p style="margin-bottom: 20px;">Premium Accounts & Digital Services <br> 
+           <span style="color: #28a745; font-weight: bold; font-size: 0.9em;">⚡ Fast Delivery • 🔒 Secure Accounts • 💬 24/7 Support</span>
+        </p>
+        
+        <a href="https://wa.me/212640322900?text=Hello,%20I%20have%20a%20question%20about%20your%20services" style="background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1em; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); transition: 0.3s;">
+            💬 تواصل معنا - WhatsApp
+        </a>
+    </div>
+
+    <div class="section-wrapper" style="margin-top: 20px;">
+        <h2 class="section-title">🛍️ Our Premium Products</h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="AUSTRALIA.jpg" alt="Facebook Australia" class="product-image">
+            <div class="product-title">Facebook AUSTRALIA Accounts</div>
+            <div class="product-price">$10.00 USD</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Via Australia (AU) Old 25+ Friend (2FA)</li>
+                <li>2FA ON (Login user:pass)</li>
+                <li>Location AUSTRALIA</li>
+                <li>Friend: 25–1000</li>
+                <li>Zin ads (no warranty if ads disabled)</li>
+                <li>Email added 30+ Day</li>
+                <li>Created: 2008–2023</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Facebook%20Australia" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="gg cloud.jpg" alt="Google Cloud" class="product-image">
+            <div class="product-title">☁️ Google Cloud Account – $300 Free Credit</div>
+            <div class="product-price">$0.00 USD</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Google Cloud Account with $300 Free Credit</li>
+                <li>Gmail “Made” feature included & High Quality</li>
+                <li>Full access to all Google Cloud Platform services</li>
+                <li>Fast delivery: 5–30 minutes</li>
+                <li>Simple activation guide included</li>
+                <li>Support available if you face any issue</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Google%20Cloud%20Account" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="scri.jpg" alt="Scribd Premium" class="product-image">
+            <div class="product-title">📚 Scribd Premium – 1 Month Access</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Scribd Premium – 1 Month</li>
+                <li>Full access to Scribd Library (Books, Audiobooks, Documents & more)</li>
+                <li>Works on PC / Android / iOS</li>
+                <li>Fast delivery: 5–30 minutes</li>
+                <li>Simple setup guide included</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Scribd%20Premium" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="te.jpg" alt="Telegram Premium" class="product-image">
+            <div class="product-title">💎 Telegram Premium – 1 Month Access</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Telegram Premium – 1 Month</li>
+                <li>Works on Android / iOS / Desktop</li>
+                <li>Faster downloads & double limits</li>
+                <li>Access to exclusive features</li>
+                <li>Fast delivery: 5–30 minutes</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Telegram%20Premium" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="ocen.jpg" alt="DigitalOcean" class="product-image">
+            <div class="product-title">🌊 DigitalOcean Account – $200 Balance</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>DigitalOcean Account with $200 Balance</li>
+                <li>Droplet limit: Up to 10 Droplets</li>
+                <li>Full account access included</li>
+                <li>Fast delivery: 5–30 minutes</li>
+                <li>Simple activation guide included</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20DigitalOcean%20Account" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="vpn.jpg" alt="NordVPN" class="product-image">
+            <div class="product-title">🔐 NordVPN Subscription – 1 to 2 Years</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>NordVPN Premium – 1 to 2 Years</li>
+                <li>Works on PC / Mac / Android / iOS</li>
+                <li>Protect up to 6 Devices</li>
+                <li>Access to Global Servers</li>
+                <li>Fast delivery: 5–30 minutes</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20NordVPN" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="off.jpg" alt="Office 365" class="product-image">
+            <div class="product-title">💼 Office 365 Pro Plus (Premium Access)</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Microsoft Office 365 Pro Plus (Premium)</li>
+                <li>Works on Windows & macOS</li>
+                <li>Includes Word, Excel, PowerPoint, Outlook & more</li>
+                <li>Fast delivery: 5–30 minutes</li>
+                <li>Activation guide included</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Office%20365" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="lindo.jpg" alt="Linode" class="product-image">
+            <div class="product-title">☁️ Linode Cloud Account – $100 Credit</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>$100 Cloud Credit</li>
+                <li>Valid for 60 Days</li>
+                <li>Full Access to Linode Services</li>
+                <li>Login details provided</li>
+                <li>Fast delivery: 5–30 minutes</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Linode%20Cloud" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="gemi.jpg" alt="Google AI Pro" class="product-image">
+            <div class="product-title">🤖 Google AI Pro (Gemini) – 1 Year Plan</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>Google AI Pro (Gemini) – 1 Year Access</li>
+                <li>Includes 2TB Cloud Storage</li>
+                <li>Works worldwide (where available)</li>
+                <li>Fast delivery: 5–30 minutes</li>
+                <li>1,000 AI credits per month</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20Google%20AI%20Pro" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+        <div class="product-card">
+            <img src="cub.jpg" alt="CapCut Pro" class="product-image">
+            <div class="product-title">🎬 CapCut Pro – 1 Month Only</div>
+            <div class="product-price">Contact Us</div>
+            <div class="stock-in">⚡ Available</div>
+            <ul class="features">
+                <li>CapCut Pro Private Access – 1 Full Month</li>
+                <li>Works on Android / iOS / Desktop</li>
+                <li>Fast activation: 5–30 minutes</li>
+                <li>Simple setup guide included</li>
+                <li>Support available if you face any issue</li>
+            </ul>
+            <a href="https://wa.me/212640322900?text=Hello,%20I%20want%20to%20buy%20CapCut%20Pro" class="whatsapp-btn">Order via WhatsApp</a>
+        </div>
+
+    </div>
+
+    
+    <div class="section-wrapper">
+        <h2 class="section-title">❓ Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">⏱️ How long does delivery take?</div>
+            <div class="faq-answer">Most of our digital products and accounts are delivered within 5 to 30 minutes during our standard working hours.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">💳 What payment methods do you accept?</div>
+            <div class="faq-answer">Please contact us on WhatsApp to discuss the available payment methods that suit you best.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">🛡️ Is there a warranty on the accounts?</div>
+            <div class="faq-answer">Yes, we provide a warranty on most of our products. If you face any login issues initially, our support team will replace or fix it for you. Please check the specific terms for each product.</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 style="margin-top: 0; color: #fff;">TOOP SELLER</h2>
+        <p>Your trusted source for premium digital accounts and subscriptions.</p>
+        <p>Email: contact@toopseller.com</p>
+        <div style="margin-top: 20px;">
+            <a href="https://wa.me/212640322900?text=Hello" style="background: #25D366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block;">Message on WhatsApp</a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8em; border-top: 1px solid #333; padding-top: 20px;">&copy; 2026 TOOP SELLER. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
