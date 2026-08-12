@@ -271,23 +271,24 @@
       font-weight: 600;
     }
 
-    /* ---- CARDS IMAGES FIX (DESKTOP & MOBILE) ---- */
+   /* ---- CARDS IMAGES FIX (DESKTOP & MOBILE) ---- */
     .card-top {
       position: relative !important;
       height: auto !important;
       min-height: 260px !important;
       display: flex !important;
-      flex-direction: column !important; /* تجعل النجوم تحت الصورة */
+      flex-direction: column !important;
       align-items: center !important;
       justify-content: center !important;
       overflow: hidden !important;
       background-color: #f8f9fa !important;
-      padding: 15px 10px !important;
+      padding: 10px 5px !important;
     }
 
     .card-img {
       width: 100% !important;
-      max-height: 200px !important;
+      height: 220px !important; /* زيادة ارتفاع الصورة لترجع كبيرة */
+      max-height: 220px !important;
       object-fit: contain !important;
     }
 
@@ -295,12 +296,24 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      gap: 4px !important;
-      margin-top: 10px !important;
-      font-size: 13px !important;
+      gap: 3px !important;
+      margin-top: 6px !important;
+      font-size: 11px !important; /* تصغير حجم النجوم والرقم */
       font-weight: 600 !important;
-      color: var(--gold) !important;
+      color: #f59e0b !important;
     }
+
+    /* ---- RESPONSIVE MOBILE ---- */
+    @media (max-width: 600px) {
+      .hero { padding: 50px 16px 40px; }
+      .products-grid { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 4px; }
+      .nav-link { padding: 7px 10px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
 
     /* ---- RESPONSIVE MOBILE ---- */
     @media (max-width: 600px) {
