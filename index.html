@@ -164,33 +164,15 @@
     .cat-btn{background:#fff;border:1.5px solid var(--border);border-radius:8px;padding:8px 18px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;transition:0.2s;}
     .cat-btn:hover,.cat-btn.active{background:var(--primary);border-color:var(--primary);color:#fff;}
 
-    /* ---- PRODUCT GRID & CARDS ---- */
+    /* ---- PRODUCT GRID ---- */
     .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;}
     .product-card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid var(--border);transition:0.3s;display:flex;flex-direction:column;}
     .product-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.1);}
-    
-    .card-top {
-      position: relative !important;
-      height: 260px !important;
-      min-height: 260px !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      overflow: hidden !important;
-      background-color: #f8f9fa !important;
-      padding: 10px !important;
-    }
-
-    .card-img {
-      width: 100% !important;
-      height: 100% !important;
-      max-height: 100% !important;
-      object-fit: contain !important;
-    }
-
-    .card-badge{position:absolute;top:12px;left:12px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:0.5px;z-index:2;}
+    .card-top{position:relative;background:linear-gradient(135deg,#f1f5f9,#e2e8f0);padding:30px;text-align:center;}
+    .card-badge{position:absolute;top:12px;left:12px;background:var(--accent);color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:0.5px;}
     .card-badge.green{background:var(--green);}
     .card-badge.gold{background:var(--gold);}
+    .card-img{width:90px;height:90px;object-fit:contain;border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.12);}
     .card-rating{display:flex;align-items:center;justify-content:center;gap:4px;margin-top:12px;font-size:13px;font-weight:600;color:var(--gold);}
     .card-body{padding:20px;flex:1;display:flex;flex-direction:column;}
     .card-cat{font-size:11px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
@@ -288,7 +270,24 @@
       .blog-grid{grid-template-columns:1fr;}
       .nav-links{gap:4px;}
       .nav-link{padding:7px 10px;font-size:12px;}
-    }
+      .card-top
+{
+  height: 260px !important;
+  min-height: 260px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-color: #f8f9fa !important;
+  padding: 10px !important;
+}
+
+.card-img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}
   </style>
 </head>
 <body>
@@ -508,7 +507,7 @@
       <!-- GOOGLE AI PRO / GEMINI -->
       <div class="product-card" id="gemini" data-cat="ai">
         <div class="card-top">
-          <div class="card-badge gold">🤖 AI</div>
+          <div class="card-badge gold">🤖 AI 2026</div>
           <img src="gemi.jpg" alt="Acheter Google AI Pro Gemini Maroc" class="card-img">
           <div class="card-rating">⭐⭐⭐⭐⭐ 4.9</div>
         </div>
@@ -525,8 +524,8 @@
           </ul>
         </div>
         <div class="card-footer">
-          <div class="card-price">Contact Us<small>1 an complet</small></div>
-          <div class="sold-badge">🌟 Nouveauté</div>
+          <div class="card-price">Contact Us<small>1 an inclus</small></div>
+          <div class="sold-badge">🤖 Très demandé en 2026</div>
         </div>
         <div class="card-btns">
           <a href="https://wa.me/212619701834?text=Salam! Bghit Google AI Pro" class="btn-wa" target="_blank">💬 WhatsApp</a>
@@ -534,16 +533,659 @@
         </div>
       </div>
 
+      <!-- DIGITALOCEAN -->
+      <div class="product-card" id="digitalocean" data-cat="cloud">
+        <div class="card-top">
+          <div class="card-badge">☁️ $200 CREDIT</div>
+          <img src="ocen.jpg" alt="Acheter compte DigitalOcean 200 dollars credit" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐⭐ 4.8</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">☁️ Cloud & Serveurs</div>
+          <h3 class="card-title">DigitalOcean — $200 de Crédit</h3>
+          <p class="card-desc">Compte DigitalOcean avec $200 de crédit offert pour déployer vos projets, bots, sites web et applications sur le cloud. Jusqu'à 10 Droplets inclus.</p>
+          <ul class="card-features">
+            <li>$200 crédit cloud gratuit</li>
+            <li>Jusqu'à 10 Droplets actifs</li>
+            <li>Accès complet à la plateforme</li>
+            <li>Parfait pour développeurs</li>
+            <li>Guide d'activation inclus</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">Contact Us<small>$200 de valeur</small></div>
+          <div class="sold-badge">💻 Pour développeurs</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit DigitalOcean" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+      <!-- GOOGLE CLOUD -->
+      <div class="product-card" id="gcloud" data-cat="cloud">
+        <div class="card-top">
+          <div class="card-badge gold">☁️ $300 FREE</div>
+          <img src="gg_cloud.jpg" alt="Compte Google Cloud 300 dollars credit gratuit" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐⭐ 4.8</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">☁️ Cloud & Serveurs</div>
+          <h3 class="card-title">Google Cloud — $300 de Crédit</h3>
+          <p class="card-desc">Compte Google Cloud Platform avec $300 de crédit gratuit. Accès à tous les services GCP : Compute Engine, Cloud Storage, BigQuery, et bien plus encore.</p>
+          <ul class="card-features">
+            <li>$300 crédit Google Cloud</li>
+            <li>Accès à tous les services GCP</li>
+            <li>Gmail "Made" haute qualité</li>
+            <li>Guide d'activation inclus</li>
+            <li>Support disponible</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$0.00<small>$300 de crédit offert</small></div>
+          <div class="sold-badge">💰 Valeur $300</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit Google Cloud" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+      <!-- LINODE -->
+      <div class="product-card" id="linode" data-cat="cloud">
+        <div class="card-top">
+          <div class="card-badge">☁️ $100 CREDIT</div>
+          <img src="lindo.jpg" alt="Compte Linode Akamai 100 dollars credit" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐ 4.6</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">☁️ Cloud & Serveurs</div>
+          <h3 class="card-title">Linode (Akamai) — $100 Crédit</h3>
+          <p class="card-desc">Compte Linode Cloud avec $100 de crédit valide 60 jours. Alternative performante et économique à AWS pour héberger vos applications et serveurs Linux.</p>
+          <ul class="card-features">
+            <li>$100 crédit cloud (60 jours)</li>
+            <li>Accès complet à Linode/Akamai</li>
+            <li>Identifiants fournis</li>
+            <li>Parfait pour VPS Linux</li>
+            <li>Livraison 5-30 minutes</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">Contact Us<small>$100 de valeur</small></div>
+          <div class="sold-badge">🖥️ Serveurs VPS</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit Linode" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+      <!-- SCRIBD -->
+      <div class="product-card" id="scribd" data-cat="creative">
+        <div class="card-top">
+          <div class="card-badge green">📚 LECTURE</div>
+          <img src="https://ibb.co/Y4QkCzf3" alt="Acheter Scribd Premium Maroc livres audiobooks" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐⭐ 4.7</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">📚 Livres & Documents</div>
+          <h3 class="card-title">Scribd Premium — 1 Mois</h3>
+          <p class="card-desc">Accès illimité à des millions de livres, audiobooks, magazines et documents professionnels. La plus grande bibliothèque numérique au monde.</p>
+          <ul class="card-features">
+            <li>Millions de livres et audiobooks</li>
+            <li>Magazines et documents premium</li>
+            <li>Compatible PC, Android, iOS</li>
+            <li>Lecture hors ligne possible</li>
+            <li>Guide de configuration inclus</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">Contact Us<small>Accès illimité</small></div>
+          <div class="sold-badge">📚 Pour étudiants</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit Scribd Premium" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+      <!-- CAPCUT PRO -->
+      <div class="product-card" id="capcut" data-cat="creative">
+        <div class="card-top">
+          <div class="card-badge">🎬 VIDEO</div>
+          <img src="cub.jpg" alt="Acheter CapCut Pro Maroc montage video" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐ 4.5</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">🎨 Créativité</div>
+          <h3 class="card-title">CapCut Pro — 1 Mois</h3>
+          <p class="card-desc">Le meilleur outil de montage vidéo pour créateurs de contenu. Templates premium, effets professionnels et export haute qualité sans filigrane.</p>
+          <ul class="card-features">
+            <li>Templates vidéo premium</li>
+            <li>Export sans filigrane</li>
+            <li>Compatible Android, iOS, PC</li>
+            <li>Effets et transitions exclusifs</li>
+            <li>Guide d'activation inclus</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">Contact Us<small>1 mois complet</small></div>
+          <div class="sold-badge">🎬 Créateurs content</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit CapCut Pro" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+      <!-- FACEBOOK AU -->
+      <div class="product-card" id="fbau" data-cat="social">
+        <div class="card-top">
+          <div class="card-badge gold">🇦🇺 AUSTRALIA</div>
+          <img src="AUSTRALIA.jpg" alt="Comptes Facebook Australie 2FA anciens" class="card-img">
+          <div class="card-rating">⭐⭐⭐⭐⭐ 4.8</div>
+        </div>
+        <div class="card-body">
+          <div class="card-cat">📱 Réseaux Sociaux</div>
+          <h3 class="card-title">Comptes Facebook Australie (2FA)</h3>
+          <p class="card-desc">Comptes Facebook authentiques avec localisation Australie. Anciens comptes créés entre 2008-2023 avec 2FA activé, email ajouté 30+ jours, 25-1000 amis.</p>
+          <ul class="card-features">
+            <li>Localisation: Australie (AU)</li>
+            <li>2FA activé (login user:pass)</li>
+            <li>25 à 1000 amis réels</li>
+            <li>Email ajouté 30+ jours</li>
+            <li>Créés entre 2008-2023</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$10.00<small>Par compte</small></div>
+          <div class="sold-badge">🇦🇺 Comptes Australie</div>
+        </div>
+        <div class="card-btns">
+          <a href="https://wa.me/212619701834?text=Salam! Bghit Facebook Australia" class="btn-wa" target="_blank">💬 WhatsApp</a>
+          <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" class="btn-buy" target="_blank">💳 Acheter</a>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how-bg">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag" style="background:rgba(255,255,255,0.1);color:#fff;">⚡ PROCESSUS</div>
+      <h2 class="section-title" style="color:#fff;">Comment Commander chez Toop Seller?</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.7);">4 étapes simples — votre abonnement en moins de 30 minutes</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Choisissez votre produit</h3>
+        <p>Parcourez notre catalogue et sélectionnez l'abonnement qui vous convient. Tous les prix sont transparents.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Contactez-nous sur WhatsApp</h3>
+        <p>Envoyez-nous un message sur WhatsApp (+212619701834) avec le produit choisi. Réponse en quelques minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Effectuez le paiement</h3>
+        <p>Virement bancaire marocain (Attijari, CIH, Chaabi) ou paiement international via Whop.com.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Recevez votre abonnement</h3>
+        <p>En 5 à 30 minutes, vous recevez vos identifiants avec un guide d'activation. Profitez de votre abonnement !</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- ==================== BLOG ==================== -->
+<section class="section" id="blog" style="background:#f1f5f9;">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">📝 BLOG SEO</div>
+      <h2 class="section-title">Guides & Articles Premium</h2>
+      <p class="section-sub">Tout ce que vous devez savoir sur les abonnements premium au Maroc</p>
+    </div>
+
+    <!-- BLOG CARDS -->
+    <div class="blog-grid" style="margin-bottom:48px;">
+      <div class="blog-card">
+        <div class="blog-img">🔐</div>
+        <div class="blog-body">
+          <div class="blog-cat">VPN & Sécurité</div>
+          <h3 class="blog-title">NordVPN au Maroc 2026 : Prix, Installation et Avis Complet</h3>
+          <p class="blog-excerpt">Tout ce que vous devez savoir sur NordVPN au Maroc : comment l'acheter, le prix en MAD, l'installation sur Android et PC, et pourquoi des milliers de Marocains l'utilisent.</p>
+          <div class="blog-meta"><span>Toop Seller · 2026</span><span class="read-time">8 min</span></div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img" style="background:linear-gradient(135deg,#0ea5e9,#6366f1);">💼</div>
+        <div class="blog-body">
+          <div class="blog-cat">Productivité</div>
+          <h3 class="blog-title">Office 365 Pro Plus : Comment l'Avoir Pas Cher au Maroc?</h3>
+          <p class="blog-excerpt">Guide complet pour obtenir Microsoft Office 365 au meilleur prix au Maroc. Installation, activation, et comparaison des offres disponibles en 2026.</p>
+          <div class="blog-meta"><span>Toop Seller · 2026</span><span class="read-time">6 min</span></div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img" style="background:linear-gradient(135deg,#ef4444,#f97316);">🤖</div>
+        <div class="blog-body">
+          <div class="blog-cat">Intelligence Artificielle</div>
+          <h3 class="blog-title">Google AI Pro (Gemini) au Maroc : Vaut-il le Prix?</h3>
+          <p class="blog-excerpt">Analyse complète de Google AI Pro avec Gemini Ultra. Est-ce que ça vaut vraiment le coup pour les Marocains? On compare avec ChatGPT Pro et on donne notre verdict.</p>
+          <div class="blog-meta"><span>Toop Seller · 2026</span><span class="read-time">10 min</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULL ARTICLES -->
+
+    <!-- ARTICLE 1: NORDVPN -->
+    <div class="article-section" id="art-nordvpn">
+      <h2>🔐 NordVPN au Maroc 2026 : Guide Complet — Prix, Installation & Avis</h2>
+      <p><strong>Toop Seller</strong> propose NordVPN au Maroc depuis 3 ans. Dans ce guide, nous vous expliquons tout ce qu'il faut savoir avant d'acheter NordVPN : pourquoi c'est le meilleur VPN pour les Marocains, comment l'installer, et comment l'obtenir au meilleur prix.</p>
+
+      <h3>Pourquoi NordVPN est le Meilleur VPN pour le Maroc?</h3>
+      <p>Les Marocains utilisent NordVPN pour trois raisons principales : accéder aux contenus bloqués géographiquement (Netflix US, BBC iPlayer, contenus sportifs), protéger leur connexion sur les réseaux WiFi publics, et contourner les restrictions internet lors des voyages à l'étranger.</p>
+      <p>Avec plus de 6400 serveurs dans 111 pays, NordVPN offre des vitesses exceptionnelles depuis le Maroc. Les serveurs les plus proches (Espagne, France, Portugal) garantissent une latence minimale pour le streaming et les jeux en ligne.</p>
+
+      <h3>Comparaison NordVPN vs Autres VPNs en 2026</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr><th>VPN</th><th>Serveurs</th><th>Appareils</th><th>Vitesse</th><th>Prix/an</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>NordVPN ✅</strong></td><td class="check">6400+</td><td class="check">6</td><td class="check">Ultra-rapide</td><td class="check">Meilleur prix</td></tr>
+          <tr><td>ExpressVPN</td><td>3000</td><td>5</td><td>Rapide</td><td>Plus cher</td></tr>
+          <tr><td>Surfshark</td><td>3200</td><td>Illimité</td><td>Bon</td><td>Similaire</td></tr>
+          <tr><td>CyberGhost</td><td>9000</td><td>7</td><td>Moyen</td><td>Similaire</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Comment Installer NordVPN sur Android au Maroc?</h3>
+      <ul>
+        <li>1. Achetez votre abonnement NordVPN via Toop Seller sur WhatsApp</li>
+        <li>2. Téléchargez l'application NordVPN depuis le Play Store ou App Store</li>
+        <li>3. Connectez-vous avec les identifiants fournis par Toop Seller</li>
+        <li>4. Choisissez un serveur (recommandé : Espagne ou France depuis le Maroc)</li>
+        <li>5. Appuyez sur "Connecter" — vous êtes protégé en 10 secondes</li>
+      </ul>
+
+      <h3>NordVPN est-il Légal au Maroc?</h3>
+      <p>Oui, l'utilisation d'un VPN est légale au Maroc. Des millions de Marocains utilisent des VPN quotidiennement pour protéger leur vie privée, accéder à des contenus internationaux et sécuriser leurs connexions. NordVPN est conforme aux lois marocaines sur la protection des données.</p>
+
+      <div class="article-cta">
+        <h3>Achetez NordVPN au Meilleur Prix via Toop Seller</h3>
+        <p>Livraison en 5-30 minutes · Paiement virement marocain · Garantie 100%</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit NordVPN" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 2: OFFICE 365 -->
+    <div class="article-section" id="art-office">
+      <h2>💼 Office 365 Pro Plus au Maroc : Comment l'Obtenir Pas Cher en 2026?</h2>
+      <p>Microsoft Office 365 Pro Plus est la suite bureautique la plus utilisée au monde. Que vous soyez étudiant, professionnel ou entrepreneur marocain, <strong>Toop Seller</strong> vous offre l'accès à Office 365 au meilleur prix avec livraison instantanée.</p>
+
+      <h3>Qu'est-ce qu'Office 365 Pro Plus?</h3>
+      <p>Microsoft Office 365 Pro Plus est la version la plus complète de la suite Office. Elle inclut Word, Excel, PowerPoint, Outlook, Teams, OneNote, Publisher et Access. Contrairement à Office classique, vous bénéficiez toujours de la dernière version et de 1TB de stockage OneDrive.</p>
+
+      <h3>Office 365 vs Office 2021 : Quelle Différence?</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr><th>Fonctionnalité</th><th>Office 365 Pro Plus</th><th>Office 2021</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mises à jour automatiques</td><td class="check">✅ Oui</td><td class="cross">❌ Non</td></tr>
+          <tr><td>OneDrive 1TB</td><td class="check">✅ Inclus</td><td class="cross">❌ Non</td></tr>
+          <tr><td>Teams inclus</td><td class="check">✅ Oui</td><td class="cross">❌ Non</td></tr>
+          <tr><td>Nombre d'appareils</td><td class="check">5 PC + 5 Mobile</td><td class="cross">1 PC</td></tr>
+          <tr><td>Nouvelles fonctionnalités IA</td><td class="check">✅ Copilot inclus</td><td class="cross">❌ Limité</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Comment Activer Office 365 sur Windows?</h3>
+      <ul>
+        <li>1. Contactez Toop Seller sur WhatsApp pour recevoir vos identifiants</li>
+        <li>2. Téléchargez Office 365 depuis office.com/setup</li>
+        <li>3. Connectez-vous avec le compte fourni</li>
+        <li>4. Installez Office en 10-15 minutes</li>
+        <li>5. Activez et commencez à travailler immédiatement</li>
+      </ul>
+
+      <h3>Office 365 Fonctionne-t-il sur Mac?</h3>
+      <p>Oui, Office 365 Pro Plus proposé par Toop Seller est compatible avec Windows 10, Windows 11 et macOS. Les applications Word, Excel et PowerPoint sont entièrement natives sur Mac avec toutes les fonctionnalités.</p>
+
+      <div class="article-cta">
+        <h3>Achetez Office 365 Pro Plus chez Toop Seller</h3>
+        <p>Licence complète · Activation guidée · Support WhatsApp inclus</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit Office 365" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 3: YOUTUBE PREMIUM -->
+    <div class="article-section" id="art-youtube">
+      <h2>🎬 YouTube Premium au Maroc 2026 : Tout Savoir Avant d'Acheter</h2>
+      <p>YouTube Premium transforme complètement votre expérience YouTube. Plus de publicités, téléchargement hors ligne, lecture en arrière-plan et YouTube Music Premium inclus. <strong>Toop Seller</strong> vous propose YouTube Premium au Maroc au meilleur prix avec livraison en 5 minutes.</p>
+
+      <h3>YouTube Premium vs YouTube Gratuit : La Différence</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr><th>Fonctionnalité</th><th>YouTube Premium ✅</th><th>YouTube Gratuit</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Publicités</td><td class="check">✅ Zéro pub</td><td class="cross">❌ Partout</td></tr>
+          <tr><td>Arrière-plan (mobile)</td><td class="check">✅ Oui</td><td class="cross">❌ Non</td></tr>
+          <tr><td>Téléchargement hors ligne</td><td class="check">✅ Illimité</td><td class="cross">❌ Non</td></tr>
+          <tr><td>YouTube Music</td><td class="check">✅ Inclus</td><td class="cross">❌ Non</td></tr>
+          <tr><td>Qualité 4K sans pub</td><td class="check">✅ Oui</td><td class="cross">❌ Non</td></tr>
+        </tbody>
+      </table>
+
+      <h3>YouTube Premium Vaut-il le Prix pour les Marocains?</h3>
+      <p>Absolument. Si vous regardez YouTube plus d'une heure par jour (ce qui est le cas de la majorité des jeunes Marocains), YouTube Premium change votre vie. Les publicités sur YouTube en 2026 peuvent durer jusqu'à 30 secondes et apparaître toutes les 5 minutes. Avec YouTube Premium via Toop Seller, vous n'en voyez plus jamais.</p>
+
+      <h3>YouTube Premium Fonctionne-t-il au Maroc?</h3>
+      <p>Oui, YouTube Premium fonctionne parfaitement au Maroc sur tous les appareils : smartphones Android, iPhone, Smart TV Samsung et LG, Chromecast et navigateur PC. Toop Seller vous garantit un accès fonctionnel avec support en cas de problème.</p>
+
+      <div class="article-cta">
+        <h3>Achetez YouTube Premium via Toop Seller</h3>
+        <p>Activation en 5 minutes · Zéro publicité · YouTube Music inclus</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit YouTube Premium" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 4: TELEGRAM PREMIUM -->
+    <div class="article-section" id="art-telegram">
+      <h2>💎 Telegram Premium au Maroc : Pourquoi l'Acheter et Comment?</h2>
+      <p>Telegram est l'application de messagerie la plus utilisée au Maroc après WhatsApp. Telegram Premium débloquerait des fonctionnalités exclusives que des millions d'utilisateurs marocains ne connaissent pas encore. Toop Seller vous propose Telegram Premium avec livraison immédiate.</p>
+
+      <h3>Ce que Telegram Premium Offre en Plus</h3>
+      <ul>
+        <li><strong>Vitesse de téléchargement 4x plus rapide</strong> : téléchargez des fichiers vidéo en quelques secondes</li>
+        <li><strong>Fichiers jusqu'à 4GB</strong> : envoyez des vidéos haute résolution sans compression</li>
+        <li><strong>Stickers et émojis exclusifs</strong> : réservés aux membres Premium</li>
+        <li><strong>Zéro publicité</strong> dans tous les canaux publics</li>
+        <li><strong>Badge Premium</strong> visible par vos contacts</li>
+        <li><strong>Traduction automatique</strong> des messages en temps réel</li>
+        <li><strong>500 canaux suivis</strong> (vs 500 pour gratuit)</li>
+      </ul>
+
+      <h3>Telegram Premium vs Telegram Gratuit</h3>
+      <p>La version gratuite de Telegram est déjà excellente, mais Premium la transforme en outil professionnel. Pour les entrepreneurs, créateurs de contenu et professionnels marocains qui utilisent Telegram pour les affaires, Premium est un investissement qui se rembourse rapidement.</p>
+
+      <div class="article-cta">
+        <h3>Activez Telegram Premium en 5 Minutes</h3>
+        <p>Aucun changement de numéro · Activé sur votre compte existant · Support inclus</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit Telegram Premium" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 5: GOOGLE AI PRO -->
+    <div class="article-section" id="art-gemini">
+      <h2>🤖 Google AI Pro (Gemini) au Maroc : Le Meilleur Abonnement IA en 2026?</h2>
+      <p>Google AI Pro avec Gemini Ultra est l'abonnement IA le plus complet disponible en 2026. <strong>Toop Seller</strong> est l'un des rares fournisseurs au Maroc à proposer Google AI Pro avec livraison instantanée et support en Darija.</p>
+
+      <h3>Gemini Ultra vs ChatGPT Pro : Lequel Choisir?</h3>
+      <table class="comparison-table">
+        <thead>
+          <tr><th>Fonctionnalité</th><th>Google AI Pro (Gemini)</th><th>ChatGPT Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Stockage Cloud inclus</td><td class="check">✅ 2TB Google Drive</td><td class="cross">❌ Non</td></tr>
+          <tr><td>Intégration Google Docs</td><td class="check">✅ Parfaite</td><td class="cross">❌ Limitée</td></tr>
+          <tr><td>Génération d'images</td><td class="check">✅ Imagen 3</td><td class="check">✅ DALL-E 3</td></tr>
+          <tr><td>Recherche web en temps réel</td><td class="check">✅ Natif</td><td class="check">✅ Natif</td></tr>
+          <tr><td>Prix</td><td class="check">Meilleur via Toop Seller</td><td class="cross">Plus cher</td></tr>
+        </tbody>
+      </table>
+
+      <h3>À Quoi Sert Google AI Pro pour les Marocains?</h3>
+      <p>Les entrepreneurs marocains utilisent Gemini Ultra pour automatiser la rédaction de contenus en français et darija, analyser des données Excel complexes, générer des images professionnelles pour leurs réseaux sociaux, et créer des présentations PowerPoint en quelques minutes.</p>
+      <p>Les étudiants utilisent Google AI Pro pour l'aide aux devoirs, la résumé de cours, et la préparation aux examens. Avec 2TB de stockage Google Drive inclus, c'est aussi la solution parfaite pour stocker et partager tous vos fichiers universitaires.</p>
+
+      <div class="article-cta">
+        <h3>Achetez Google AI Pro chez Toop Seller</h3>
+        <p>1 an d'accès · 2TB stockage · Gemini Ultra inclus · Support en Darija</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit Google AI Pro" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 6: DIGITALOCEAN -->
+    <div class="article-section" id="art-do">
+      <h2>☁️ DigitalOcean au Maroc : Compte avec $200 de Crédit — Guide Complet</h2>
+      <p>DigitalOcean est la plateforme cloud préférée des développeurs indépendants et startups. <strong>Toop Seller</strong> propose des comptes DigitalOcean avec $200 de crédit offert, parfaits pour les développeurs marocains qui veulent héberger leurs projets sans frais initiaux.</p>
+
+      <h3>Pourquoi Choisir DigitalOcean pour les Projets Marocains?</h3>
+      <ul>
+        <li><strong>Prix compétitifs</strong> : Droplets à partir de $6/mois</li>
+        <li><strong>Interface simple</strong> : idéale pour les débutants et experts</li>
+        <li><strong>$200 de crédit</strong> : jusqu'à 30+ jours d'hébergement gratuit</li>
+        <li><strong>Serveurs en Europe</strong> : faible latence depuis le Maroc</li>
+        <li><strong>Documentation excellente</strong> : en anglais et tutoriels clairs</li>
+        <li><strong>Support 24/7</strong> : ticketing et communauté active</li>
+      </ul>
+
+      <h3>Que Peut-on Faire avec $200 de Crédit DigitalOcean?</h3>
+      <p>Avec $200 de crédit offert via Toop Seller, vous pouvez héberger un site WordPress pendant 30+ jours sur un Droplet $6/mois, déployer une API Node.js ou Python sur un VPS, tester des projets machine learning avec GPU Droplets, ou configurer un serveur de jeux pour votre communauté.</p>
+
+      <div class="article-cta">
+        <h3>Obtenez Votre Compte DigitalOcean via Toop Seller</h3>
+        <p>$200 crédit · 10 Droplets · Support en Darija disponible</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit DigitalOcean" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 7: SCRIBD -->
+    <div class="article-section" id="art-scribd">
+      <h2>📚 Scribd Premium au Maroc : La Plus Grande Bibliothèque Numérique</h2>
+      <p>Scribd Premium vous donne accès à des millions de livres, audiobooks, magazines et documents professionnels. Pour les étudiants et professionnels marocains, <strong>Toop Seller</strong> propose Scribd Premium à un prix accessible avec livraison en 5-30 minutes.</p>
+
+      <h3>Qu'est-ce que Scribd Premium?</h3>
+      <p>Scribd est une plateforme d'abonnement qui donne accès illimité à une bibliothèque de plus de 60 millions de titres : livres en anglais, français et arabe, audiobooks, magazines comme Forbes et National Geographic, partitions musicales, et millions de documents professionnels.</p>
+
+      <h3>Scribd Premium est-il Utile pour les Étudiants Marocains?</h3>
+      <p>Absolument. Les étudiants des universités marocaines utilisent Scribd pour accéder aux livres universitaires coûteux en version numérique, lire des articles scientifiques, et télécharger des cours et examens corrigés partagés par la communauté mondiale.</p>
+
+      <h3>Scribd vs Bibliothèques Gratuites</h3>
+      <ul>
+        <li><strong>Scribd</strong> : 60M+ titres, audiobooks, magazines, synchronisation cloud</li>
+        <li><strong>Project Gutenberg</strong> : seulement livres anciens domaine public</li>
+        <li><strong>Z-Library</strong> : légalité douteuse, risques de sécurité</li>
+        <li><strong>Bibliothèque nationale</strong> : accès physique limité, peu de numérique</li>
+      </ul>
+
+      <div class="article-cta">
+        <h3>Accédez à Scribd Premium via Toop Seller</h3>
+        <p>60 millions de titres · Hors ligne · PC, Mobile et Tablette</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit Scribd Premium" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+    <!-- ARTICLE 8: CAPCUT PRO -->
+    <div class="article-section" id="art-capcut">
+      <h2>🎬 CapCut Pro au Maroc : Le Meilleur Outil de Montage Vidéo en 2026</h2>
+      <p>CapCut est devenu l'application de montage vidéo numéro 1 au Maroc, utilisé par des milliers de créateurs de contenu TikTok, Instagram et YouTube. <strong>Toop Seller</strong> propose CapCut Pro pour débloquer toutes les fonctionnalités premium sans restrictions.</p>
+
+      <h3>Pourquoi les Créateurs Marocains Choisissent CapCut Pro?</h3>
+      <ul>
+        <li><strong>Zéro filigrane</strong> : exportez vos vidéos sans logo CapCut</li>
+        <li><strong>Templates premium</strong> : centaines de templates tendance non disponibles en gratuit</li>
+        <li><strong>Effets exclusifs</strong> : filtres et transitions pro pour se démarquer</li>
+        <li><strong>Export 4K</strong> : qualité maximale pour YouTube et Instagram</li>
+        <li><strong>IA intégrée</strong> : fond automatique, amélioration vidéo, sous-titres auto</li>
+        <li><strong>Stockage cloud</strong> : sauvegardez vos projets en ligne</li>
+      </ul>
+
+      <h3>CapCut Gratuit vs CapCut Pro</h3>
+      <p>La version gratuite de CapCut est limitée : filigrane obligatoire, accès restreint aux templates premium, et certains effets IA bloqués. Pour les créateurs professionnels qui veulent une présence sérieuse sur les réseaux sociaux, CapCut Pro via Toop Seller est indispensable.</p>
+
+      <div class="article-cta">
+        <h3>Activez CapCut Pro en 5 Minutes</h3>
+        <p>Templates premium · Zéro filigrane · IA vidéo incluse</p>
+        <a href="https://wa.me/212619701834?text=Salam! Bghit CapCut Pro" target="_blank">Commander sur WhatsApp →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="avis">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">⭐ AVIS CLIENTS</div>
+      <h2 class="section-title">Ce que Disent nos Clients</h2>
+      <p class="section-sub">Des centaines de Marocains nous font confiance pour leurs abonnements premium</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text" itemprop="reviewBody">"Wach kayna khidma bhal had! Sifter NordVPN w f 10 dqa9 kan 3andi. Support mzyan bzzaf, jawbo f WhatsApp f dqa9a. Nsifu 5/5 bladi! 🇲🇦"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">Y</div>
+          <div>
+            <div class="reviewer-name" itemprop="author">Youssef B.</div>
+            <div class="reviewer-city">Casablanca</div>
+            <div class="verified">✅ Achat vérifié · NordVPN</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"J'ai acheté Office 365 Pro Plus chez Toop Seller. Livraison en 15 minutes, guide d'activation clair, tout fonctionne parfaitement sur mon PC et mon Mac. Prix imbattable au Maroc!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">S</div>
+          <div>
+            <div class="reviewer-name">Sara M.</div>
+            <div class="reviewer-city">Rabat</div>
+            <div class="verified">✅ Achat vérifié · Office 365</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"YouTube Premium m3a Toop Seller — service top! Daba ma kaynach pub f YouTube. Ghir 5 d9iq w kan active. Ghadi nrja3 nshri menhom dima inchallah 👍"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">A</div>
+          <div>
+            <div class="reviewer-name">Amine K.</div>
+            <div class="reviewer-city">Marrakech</div>
+            <div class="verified">✅ Achat vérifié · YouTube Premium</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"DigitalOcean compte m3a $200 credit. Khdam mzyan, deployit project diali f less than 1 hour. Toop Seller huma les meilleurs pour les comptes cloud au Maroc."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">K</div>
+          <div>
+            <div class="reviewer-name">Khalid R.</div>
+            <div class="reviewer-city">Tanger</div>
+            <div class="verified">✅ Achat vérifié · DigitalOcean</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Google AI Pro via Toop Seller — vraiment top! Gemini Ultra khdm mezyan bzzaf. 2TB drive + AI premium. Réponse WhatsApp rapide, delivery en 20 minutes. Merci!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">I</div>
+          <div>
+            <div class="reviewer-name">Imane F.</div>
+            <div class="reviewer-city">Fès</div>
+            <div class="verified">✅ Achat vérifié · Google AI Pro</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Telegram Premium acheté chez Toop Seller. Activation rapide sur mon numero existant. Les downloads sont vraiment plus rapides et les stickers exclusifs sont bien. 5 étoiles!"</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">O</div>
+          <div>
+            <div class="reviewer-name">Omar S.</div>
+            <div class="reviewer-city">Agadir</div>
+            <div class="verified">✅ Achat vérifié · Telegram Premium</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background:#f1f5f9;">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">❓ FAQ</div>
+      <h2 class="section-title">Questions Fréquentes</h2>
+      <p class="section-sub">Tout ce que vous devez savoir sur nos services</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Comment acheter un abonnement chez Toop Seller?</div>
+        <div class="faq-a">C'est simple : contactez-nous sur WhatsApp (+212619701834), dites-nous le produit souhaité, effectuez le paiement par virement bancaire ou via Whop.com, et recevez votre abonnement en 5 à 30 minutes. Notre équipe vous guide à chaque étape.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">كيفاش نشري اشتراك عند Toop Seller بالدارجة؟</div>
+        <div class="faq-a">سهلة! تواصل معانا على واتساب: +212619701834. قولنا شنو بغيتي (NordVPN, Office 365, YouTube...), دير الدفع عبر الفيرمان البنكي (Attijari, CIH, Chaabi) أو Cash Plus, وفي 5-30 دقيقة غيوصلك الاشتراك مع دليل التفعيل.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Quels modes de paiement acceptez-vous?</div>
+        <div class="faq-a">Nous acceptons les virements bancaires marocains (Attijari, CIH, Banque Populaire, BMCE), Cash Plus, et le paiement international via notre boutique Whop.com. Contactez-nous sur WhatsApp pour choisir la méthode qui vous convient.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Y a-t-il une garantie sur les abonnements?</div>
+        <div class="faq-a">Oui, tous nos abonnements sont garantis. Si vous rencontrez un problème d'activation ou d'accès, notre équipe support intervient immédiatement pour remplacer ou réparer votre compte, sans frais supplémentaires.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Combien de temps prend la livraison?</div>
+        <div class="faq-a">La livraison est quasi-instantanée : entre 5 et 30 minutes après confirmation du paiement, 7 jours sur 7. Pendant les heures de pointe, la livraison peut prendre jusqu'à 1 heure maximum.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Les abonnements fonctionnent-ils au Maroc?</div>
+        <div class="faq-a">Oui, 100%. Tous nos produits — NordVPN, Office 365, YouTube Premium, Telegram Premium, Google AI Pro, DigitalOcean, Scribd et CapCut Pro — fonctionnent parfaitement depuis le Maroc sur tous les appareils.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">واش الاشتراكات كتخدم فالمغرب بحالو بحال؟</div>
+        <div class="faq-a">آه، 100%. كاع المنتجات ديالنا كتخدم مزيان من المغرب: NordVPN, Office 365, YouTube Premium, Telegram Premium, Google AI Pro, DigitalOcean, Scribd و CapCut Pro — كلهم كيخدمو على الهاتف والكمبيوتر.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Est-ce que vos abonnements sont légaux et sécurisés?</div>
+        <div class="faq-a">Oui. Toop Seller existe depuis 3 ans et a servi plus de 500 clients satisfaits. Nous garantissons la sécurité de tous les comptes fournis. Nos paiements sont traités via Whop.com, plateforme internationale sécurisée.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background:linear-gradient(135deg,var(--dark) 0%,#1e3a8a 100%);padding:60px 20px;text-align:center;color:#fff;">
+  <div style="max-width:600px;margin:0 auto;">
+    <div style="font-size:48px;margin-bottom:16px;">🚀</div>
+    <h2 style="font-family:'Poppins',sans-serif;font-size:32px;font-weight:800;margin-bottom:16px;">Prêt à Commander?</h2>
+    <p style="font-size:17px;color:rgba(255,255,255,0.8);margin-bottom:32px;line-height:1.7;">Rejoignez 500+ clients satisfaits au Maroc. Livraison en 5-30 minutes, paiement local, garantie 100%.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/212619701834?text=Salam Toop Seller! Bghit nshri abonnement" target="_blank" style="background:#25D366;color:#fff;padding:16px 36px;border-radius:10px;font-weight:700;font-size:17px;display:flex;align-items:center;gap:8px;">💬 Commander sur WhatsApp</a>
+      <a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC" target="_blank" style="background:var(--accent);color:#fff;padding:16px 36px;border-radius:10px;font-weight:700;font-size:17px;">💳 Payer en Ligne</a>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:rgba(255,255,255,0.5);">⚡ Livraison instantanée · 🔒 Paiement sécurisé · 🛡️ Garantie 100% · 🇲🇦 Support Darija</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="#" class="logo" style="color:#fff;">TOOP<span style="color:var(--accent);">SELLER</span></a>
-      <p>Votre boutique de confiance au Maroc pour tous vos abonnements digitaux et services premium. Support WhatsApp 24/7 et livraison rapide.</p>
+      <div class="logo" style="font-size:24px;margin-bottom:12px;">TOOP<span>SELLER</span></div>
+      <p>La référence marocaine pour les abonnements premium digitaux. NordVPN, Office 365, YouTube Premium, Google AI Pro et bien plus. Livraison instantanée, paiement local, garantie 100%.</p>
+      <a href="https://wa.me/212619701834" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;padding:10px 20px;border-radius:8px;font-weight:700;font-size:14px;">💬 +212 776 056 268</a>
     </div>
     <div class="footer-col">
       <h4>Produits</h4>
@@ -551,34 +1193,50 @@
         <li><a href="#nordvpn">NordVPN</a></li>
         <li><a href="#office365">Office 365</a></li>
         <li><a href="#youtube">YouTube Premium</a></li>
+        <li><a href="#telegram">Telegram Premium</a></li>
         <li><a href="#gemini">Google AI Pro</a></li>
+        <li><a href="#digitalocean">DigitalOcean</a></li>
+        <li><a href="#scribd">Scribd Premium</a></li>
+        <li><a href="#capcut">CapCut Pro</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Support</h4>
+      <h4>Informations</h4>
       <ul>
-        <li><a href="https://wa.me/212619701834">WhatsApp 24/7</a></li>
         <li><a href="#faq">FAQ</a></li>
+        <li><a href="#avis">Avis Clients</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="https://wa.me/212619701834">Support</a></li>
+        <li><a href="mailto:contact@toopseller.store">Email</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="#">Politique de Confidentialité</a></li>
+        <li><a href="#">Conditions d'Utilisation</a></li>
+        <li><a href="#">Politique de Remboursement</a></li>
+        <li><a href="https://whop.com/checkout/plan_JZ9RMfNjUmxVC">Boutique Whop</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    &copy; 2026 Toop Seller. Tous droits réservés.
+    <p>© 2026 Toop Seller — toopseller.store · Tous droits réservés · Made with ❤️ in Morocco 🇲🇦</p>
+    <p style="margin-top:6px;">Abonnements Premium · Maroc · NordVPN · Office 365 · YouTube Premium · Google AI Pro</p>
   </div>
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/212619701834" class="wa-float" target="_blank">💬</a>
+<a href="https://wa.me/212619701834?text=Salam! Bghit nshri abonnement" class="wa-float" target="_blank" title="Commander sur WhatsApp">💬</a>
 
 <script>
+// Category filter
 function filterCat(cat, btn) {
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  
-  const cards = document.querySelectorAll('.product-card');
-  cards.forEach(card => {
-    if(cat === 'all' || card.dataset.cat === cat) {
-      card.style.display = 'flex';
+  document.querySelectorAll('.product-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
     } else {
       card.style.display = 'none';
     }
