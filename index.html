@@ -270,19 +270,23 @@
       .blog-grid{grid-template-columns:1fr;}
       .nav-links{gap:4px;}
       .nav-link{padding:7px 10px;font-size:12px;}
-      .card-top 
+      .card-top
 {
-  height: 220px !important;
+  height: 260px !important;
+  min-height: 260px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden !important;
+  background-color: #f8f9fa !important;
+  padding: 10px !important;
 }
 
 .card-img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
 }
   </style>
 </head>
